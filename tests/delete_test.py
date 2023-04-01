@@ -1,6 +1,6 @@
 from src.schema import user_data
 from src.utils.utils_put import create_user, assert_status_code
-from src.utils.utils_delete import delete_user, assert_no_user_in_list
+from src.utils.utils_delete import *
 
 
 def test_delete():

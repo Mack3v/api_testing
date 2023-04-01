@@ -1,5 +1,5 @@
 import json
-from src.utils.utils_get import get_users, validate_user_item
+from src.utils.utils_get import *
 
 
 def test_get_users():
