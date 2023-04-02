@@ -3,6 +3,10 @@ from src.schema import user_data, updated_data, expected_put_data
 
 
 def test_put():
+    """
+    Создание пользователя с user_data, обновление на updated_data. Проверка корректности новых данных
+    в ответе сервера и в общем списке
+    """
     response, user_id = create_user(user_data)
     assert_status_code(response, 201)
     new_data = put_update_data(updated_data, user_id)
