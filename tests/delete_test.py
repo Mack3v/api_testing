@@ -5,7 +5,7 @@ from src.utils.utils_delete import *
 
 def test_delete():
     """
-    Создание и удаление пользователя. Проверка ответа сервара и отсутсвия пользователя в общем списке
+    Создание и удаление пользователя. Проверка ответа сервера и отсутствия пользователя в общем списке
     """
     response, user_id = create_user(user_data)
     assert_status_code(response, 201)
