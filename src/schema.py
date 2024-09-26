@@ -31,20 +31,7 @@ user_data = {
     "gender": random.choice(["male", "female"]),
     "status": random.choice(["active", "inactive"])
 }
-# Неорректные данные для создания пользователя
-incorrect_user_data = {
-    "name": fake.name(),
-    "email": "fake-email",
-    "gender": random.choice(["male", "female"]),
-    "status": random.choice(["active", "inactive"])
-}
-# Ожидаемые данные после отправки POST-запроса
-expected_post_data = {
-    "name": user_data["name"],
-    "email": user_data["email"],
-    "gender": user_data["gender"],
-    "status": user_data["status"]
-}
+
 # Данные для обновления пользователя
 updated_data = {
     "name": fake.name(),
